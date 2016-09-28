@@ -17,10 +17,13 @@
   },
   "scripts": {
     "start": "brunch watch --server --port 8080",
-      "postinstall": "bower install",
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "build": "brunch build --production",
-      "deploy": "aws s3 sync public s3://apps-revealnews-org/$npm_package_name --exclude *.tmp --acl public-read"
+    "postinstall": "bower install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "brunch build --production",
+    "push": "aws s3 sync public s3://apps-revealnews-org/$npm_package_name --exclude *.tmp --acl public-read",
+    "invalidate": "aws cloudfront create-invalidation --distribution-id E3ANDGTFXA0K7I --paths /$npm_package_name/* /$npm_package_name",
+    "deploy": "npm run build && npm run push && npm run invalidate",
+    "removeFA": "rm -r app/assets/fonts/* && rm app/styles/vendor/*.css"
   },
   "author": "",
   "license": "ISC"
