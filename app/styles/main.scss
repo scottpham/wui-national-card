@@ -25,11 +25,17 @@ $rv-rule: rgb(218, 218, 218);
 
 
 
+
 ///////
 @import "bootstrap";
 @import "base";
 @import "card";
 @import "table";
+
+#nationalView {
+  padding-bottom: 10px;
+}
+
 
 /* =================
    MEDIA QUERIES
