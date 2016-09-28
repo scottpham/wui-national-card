@@ -1,0 +1,27 @@
+{
+  "name": "wui-national",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync-brunch": "0.0.9",
+    "brunch": "^2.8.2",
+    "css-brunch": "^2.6.1",
+    "javascript-brunch": "^2.0.0",
+    "json-brunch": "^1.5.4",
+    "sass-brunch": "^2.6.3",
+    "vue": "^1.0.26",
+    "vue-brunch": "1.1.2",
+    "json-brunch": "^1.5.4"
+  },
+  "scripts": {
+    "start": "brunch watch --server --port 8080",
+      "postinstall": "bower install",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "brunch build --production",
+      "deploy": "aws s3 sync public s3://apps-revealnews-org/$npm_package_name --exclude *.tmp --acl public-read"
+  },
+  "author": "",
+  "license": "ISC"
+}

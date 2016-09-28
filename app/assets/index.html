@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Brunch Template">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:description" content="A DESCRIPTION GOES HERE">
+
+    <title>Brunch Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="https://www.revealnews.org/wp-content/themes/reveal2015/static/images/cir/favicon.ico" />
+
+    <!-- brunch compiles to this css file -->
+    <link rel="stylesheet" href="app.css">
+
+</head>
+
+<body>
+
+  <section id="nationalView">
+      <div class="container-fluid rv-content box-shadow">
+          <div class="row">
+              <div class="col-sm-6 col-xs-12">
+                  <h2>United States</h2>
+                  <h4>The Wildland Urban Interface (WUI) is the area where communities and wildlands meet.</h4>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                  <h3><span class="highlight">35%</span> of the US lives in the Wildland Urban Interface</h3>
+              </div>
+
+          </div>
+
+          <div class="row">
+
+              <div class="col-xs-12 col-sm-6">
+
+                  <img width="100%" src="images/UNITEDSTATES.png" alt="" />
+                  <p><span class="swatch"></span><span class="legend"> WUI zones</span></p>
+              </div>
+
+
+              <div class="col-xs-12 col-sm-6 table-container ">
+                  <table class="table table-bordered">
+                      <tr>
+                          <td>Total wildfires (1992-2013)</td>
+                          <td>1.73M</td>
+                      </tr>
+
+                      <tr>
+                          <td>Acres burned</td>
+                          <!-- <td>126,137,428</td> -->
+                          <td>126.14M</td>
+                      </tr>
+
+                      <tr>
+                          <td>Fire departments trained for <nobr> wildfires *</nobr></td>
+                          <td>31%</td>
+                      </tr>
+                      <tr>
+                          <td>Most common fire cause</td>
+                          <td>Debris Burning</td>
+                      </tr>
+                  </table>
+                  <p class="rv-note">* percentage applies only to the subset of fire department which are responsible for combating wildfires.</p>
+                  <p class="rv-note">Note: Alaska and Hawaii are not included in the Forest Service data set.</p>
+
+              </div>
+          </div>
+
+      </div>
+
+  </section>
+
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- brunch compiles app/vendor/*.js to this -->
+    <script src="vendor.js"></script>
+
+    <!-- brunch compiles app/scripts/*.js to this -->
+    <script src="app.js"></script>
+
+    <!-- init the main entry-point script -->
+    <script>
+        var App = require('scripts/main');
+    </script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        var WebFontConfig = {
+            google: {
+                families: ['Lato', ]
+            },
+            typekit: {
+                id: 'ack4lmg'
+            }
+        };
+
+        _gaq.push(['_setAccount', 'UA-2147301-25']);
+        _gaq.push(['_setDomainName', '.revealnews.org']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1.5.6/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Share this story</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="share-icons">
+                        <a class="facebook-button" href="#"><i class="fa fa-facebook-square"></i></a>
+                        <a class="twitter-button" href="#"><i class="fa fa-twitter-square"></i></a>
+                        <a class="email-button" href="#"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

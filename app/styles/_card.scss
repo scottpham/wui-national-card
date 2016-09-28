@@ -1,0 +1,73 @@
+.container-fluid {
+    border-radius: 2px;
+    // margin-top: 1em;
+    select {
+        font-family: $rv-sans;
+        font-size: 1.2em;
+    }
+    p {
+        margin-top: 0.5em;
+    }
+    .container {
+        padding: 0 0 20px;
+    }
+    h2 {
+        font-family: $rv-sans;
+        margin-left: 0;
+        margin-bottom: 0.5em;
+        font-size: 2.4em;
+        font-weight: 600;
+    }
+    h4 {
+        color: $light-gray;
+    }
+
+    h3 {
+      color: $black;
+      border: 1px solid $rv-rule;
+      padding: 0.5em;
+    }
+
+    .highlight {
+      color: $wui-color;
+      font-weight: 600;
+    }
+
+    .swatch {
+      background-color: $wui-color;
+      width: 1em;
+      height: 1em;
+      display: inline-block;
+      float: none;
+    }
+
+    .legend {
+      color: $dark-gray;
+      font-size: 0.9em;
+      font-family: $rv-sans;
+    }
+}
+.box-shadow {
+    box-shadow: 3px 3px 5px $gray;
+}
+
+// over-ride bootstrap
+.container-fluid {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#app, #nationalView {
+  padding-top: 10px;
+}
+
+#app {
+  padding-bottom: 15px;
+}
+
+
+
+// this directive disappears after load
+[v-cloak] {
+    display: none;
+}

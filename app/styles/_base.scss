@@ -1,0 +1,125 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+  font-size: 16px;
+  color: $black;
+  padding: 0;
+  margin: 0;
+  font-family: $rv-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default;
+}
+
+h2 {
+  font-family: $rv-sans;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.note {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.hed {
+  font-family: 'Lato', Helvetica,sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+
+.webtweet {
+  display: block;
+  margin-bottom: 10px;
+
+  &::after {
+    content: url(https://s3.amazonaws.com/uploads-cironline-org/scripts/twitter-web-intents/Twitter_logo_blue_16.png)
+  }
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+p.credit {
+  color: #777;
+  font-size: 0.6em;
+  text-align: right;
+  font-family: Lato,sans-serif;
+  margin-top: 1em;
+  max-width: 350px;
+  float: right;
+}
+
+#logo {
+  @extend p.credit;
+  width: 20%;
+  max-width: 150px;
+  clear: both;
+  margin-top: -10px;
+}
+
+
+///// attempt at creating some reveal specific styles
+.rv-content {
+  background: whitesmoke;
+  border-left: 1px solid $rv-rule;
+  border-right: 1px solid $rv-rule;
+  border-bottom: 1px solid $rv-rule;
+  border-top: 1px solid $rv-rule;
+}
+
+
+a {
+    color: $link-color;
+    &:hover {
+        color: darken($link-color, 10%);
+    }
+}
+
+
+.rv-credit {
+  color: #777;
+  font-size: 0.8em;
+  text-align: left;
+  line-height: 0.7em;
+  font-family: $rv-sans;
+  margin-top: 1em;
+  max-width: 350px;
+}
+
+.rv-note {
+  font-size: 0.8em;
+  line-height: 1.1em;
+  color: $light-gray;
+}
+
+#logo {
+  @extend .rv-credit;
+  width: 20%;
+  max-width: 150px;
+  clear: both;
+  margin-top: -10px;
+}
+
+.rv-label {
+  font-size: 0.8em;
+  color: $off-white;
+  font-weight: normal;
+  font-family: $rv-sans;
+}
+
+.rv-graphic {
+  display: block;
+  float: none;
+  max-width: 1200px;
+}
