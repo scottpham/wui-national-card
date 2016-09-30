@@ -94,13 +94,6 @@ a {
   color: $light-gray;
 }
 
-#logo {
-  @extend .rv-credit;
-  width: 20%;
-  max-width: 150px;
-  clear: both;
-  margin-top: -10px;
-}
 
 .rv-label {
   font-size: 0.8em;
