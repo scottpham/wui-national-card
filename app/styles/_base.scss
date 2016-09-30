@@ -53,10 +53,10 @@ h2 {
 p.credit {
   color: #777;
   font-size: 0.6em;
+  line-height: 1.1em;
   text-align: right;
   font-family: Lato,sans-serif;
   margin-top: 1em;
-  max-width: 350px;
   float: right;
 }
 
@@ -91,10 +91,10 @@ a {
   color: #777;
   font-size: 0.8em;
   text-align: left;
-  line-height: 0.7em;
+  line-height: 1.1em;
   font-family: $rv-sans;
   margin-top: 1em;
-  max-width: 350px;
+
 }
 
 .rv-note {
