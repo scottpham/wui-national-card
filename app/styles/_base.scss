@@ -50,15 +50,6 @@ h2 {
   padding: 0.2em 0;
 }
 
-p.credit {
-  color: #777;
-  font-size: 0.6em;
-  line-height: 1.1em;
-  text-align: right;
-  font-family: Lato,sans-serif;
-  margin-top: 1em;
-  float: right;
-}
 
 #logo {
   @extend p.credit;
